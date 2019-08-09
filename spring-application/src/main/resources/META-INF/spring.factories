@@ -1,0 +1,12 @@
+# Auto Configure
+#org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+#org.akj.springboot.configuration.HelloWorldAutoConfiguration
+
+# Application Listeners
+org.springframework.context.ApplicationListener=\
+org.akj.springboot.listener.AfterHelloWorldApplicationListener,\
+org.akj.springboot.listener.HelloWorldApplicationListener,\
+org.akj.springboot.listener.CustomConfigFileApplicationListener
+
+org.springframework.boot.SpringApplicationRunListener=\
+org.akj.springboot.listener.HelloWorldApplicationRunListener
